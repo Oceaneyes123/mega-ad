@@ -8,7 +8,7 @@
               class="d-flex flex-column justify-center align-center"
               style="height: 100%"
             >
-              <div class="h4 py-10 text-center">
+              <div class="h4 py-10 text-center korean-text">
                 영.어.가 어려운이유 이제 아셔야 합니다.
               </div>
               <v-carousel
@@ -28,7 +28,7 @@
                   >
                     <div class="white--text">
                       <div
-                        class="h5 text-center nanum mb-10"
+                        class="h5 text-center nanum mb-10 korean-text"
                         v-html="item.question"
                       ></div>
                       <div class="d-flex justify-center">
@@ -51,7 +51,7 @@
                           <div class="mt-3">{{ item.answer1 }}</div>
                         </div>
                         <div
-                          class="mr-7 d-flex flex-column"
+                          class="ml-7 d-flex flex-column"
                           @click="carousel = carousel + 1"
                         >
                           <v-hover v-slot="{ hover }">
