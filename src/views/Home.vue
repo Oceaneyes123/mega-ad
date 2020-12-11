@@ -31,11 +31,11 @@
                         class="h5 text-center nanum mb-10"
                         v-html="item.question"
                       ></div>
-                      <div
-                        class="d-flex justify-center"
-                        @click="carousel = carousel + 1"
-                      >
-                        <div class="mr-7 d-flex flex-column">
+                      <div class="d-flex justify-center">
+                        <div
+                          class="mr-7 d-flex flex-column"
+                          @click="carousel = carousel + 1"
+                        >
                           <v-hover v-slot="{ hover }">
                             <v-icon
                               color="white"
@@ -51,7 +51,7 @@
                           <div class="mt-3">{{ item.answer1 }}</div>
                         </div>
                         <div
-                          class="ml-7 d-flex flex-column"
+                          class="mr-7 d-flex flex-column"
                           @click="carousel = carousel + 1"
                         >
                           <v-hover v-slot="{ hover }">
