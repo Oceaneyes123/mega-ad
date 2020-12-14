@@ -8,8 +8,14 @@
               class="d-flex flex-column justify-center align-center"
               style="height: 100%"
             >
-              <div class="h4 py-10 text-center korean-text">
-                영.어.가 어려운이유 이제 아셔야 합니다.
+              <div
+                class="nanum py-10 text-center korean-text"
+                :class="isMobile ? 'h6' : 'h4'"
+              >
+                <span class="font-weight-black"> 영.어. </span>
+                <span style="color: #262626" class="font-weight-regular">
+                  가 어려운이유 이제 아셔야 합니다.
+                </span>
               </div>
               <v-carousel
                 :show-arrows="false"
@@ -26,9 +32,10 @@
                     class="d-flex justify-center align-center"
                     tile
                   >
-                    <div class="white--text">
+                    <div style="color: #d6d6d6">
                       <div
-                        class="h5 text-center nanum mb-10 korean-text"
+                        :class="isMobile ? '' : 'h5'"
+                        class="text-center nanum mb-10 korean-text font-weight-light"
                         v-html="item.question"
                       ></div>
                       <div class="d-flex justify-center">
@@ -48,7 +55,7 @@
                               }}</v-icon
                             >
                           </v-hover>
-                          <div class="mt-3">{{ item.answer1 }}</div>
+                          <div class="mt-3 white--text">{{ item.answer1 }}</div>
                         </div>
                         <div
                           class="ml-7 d-flex flex-column"
@@ -66,7 +73,7 @@
                               }}</v-icon
                             >
                           </v-hover>
-                          <div class="mt-3">{{ item.answer2 }}</div>
+                          <div class="mt-3 white--text">{{ item.answer2 }}</div>
                         </div>
                       </div>
                     </div>
@@ -92,17 +99,17 @@ export default {
       carousel: null,
       survey: [
         {
-          question: `<span class="font-weight-bold">Q. </span>동영상 강의, 학원 수강을 해 봤는데 스피킹 실력이 별로 늘지 않은 경험이 있으신가요 ?`,
+          question: `<span class="font-weight-bold h5">Q. </span>동영상 강의, 학원 수강을 해 봤는데 스피킹 실력이 별로 늘지 않은 경험이 있으신가요 ?`,
           answer1: "그렇다",
           answer2: "그런 적 없다"
         },
         {
-          question: `<span class="font-weight-bold">Q. </span> 스피킹은 <span class="font-weight-bold">암묵기억</span>에 의존한다는 사실을  아시나요 ?`,
+          question: `<span class="font-weight-bold h5">Q. </span> 스피킹은 <span class="font-weight-bold white--text headline" >암묵기억</span>에 의존한다는 사실을  아시나요 ?`,
           answer1: "그렇다",
           answer2: "그렇지 않다"
         },
         {
-          question: `<span class="font-weight-bold">Q. </span> 동영상 강의, 학원 수강을 해 봤는데 스피킹 실력이 별로 늘지 않은 경험이 있으신가요 ?`,
+          question: `<span class="font-weight-bold h5">Q. </span> 동영상 강의, 학원 수강을 해 봤는데 스피킹 실력이 별로 늘지 않은 경험이 있으신가요 ?`,
           answer1: "그렇다",
           answer2: "그렇지 않다"
         }
