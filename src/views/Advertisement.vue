@@ -26,7 +26,7 @@
             <div class="d-flex flex-wrap align-center justify-center mb-5">
               <div class="h4 white--text mr-3">Q</div>
               <v-card color="blue" class="rounded-lg">
-                <v-card-text class="h6 white--text">
+                <v-card-text class="h6 white--text korean-text">
                   장기 수강을 했는데도 실력이 늘지 않으셨나요 ?
                 </v-card-text>
               </v-card>
@@ -34,7 +34,7 @@
             <div class="d-flex align-center justify-center mb-5">
               <div class="h4 white--text mr-3">Q</div>
               <v-card color="blue" class="rounded-lg">
-                <v-card-text class="h6 white--text">
+                <v-card-text class="h6 white--text korean-text">
                   광고를 보고 유명 사이트에서 수강을
                   <br />
                   했지만 얼마 못 가 포기하셨나요 ?
@@ -44,14 +44,14 @@
             <div class="d-flex align-center justify-center mb-5">
               <div class="h4 white--text mr-3">Q</div>
               <v-card color="blue" class="rounded-lg">
-                <v-card-text class="h6 white--text">
+                <v-card-text class="h6 white--text korean-text">
                   일대일 수강을 하고 싶지만 <br />
                   너무 가격이 부담되셨나요?
                 </v-card-text>
               </v-card>
             </div>
           </v-card>
-          <div class="text-center mt-16 white--text">
+          <div class="text-center mt-16 white--text korean-text">
             <div class="h4 nanum font-weight-black">스피킹 안 되는 이유</div>
             <div class="h5 nanum font-weight-thin">
               메가토킹에서 알려드립니다.
@@ -60,18 +60,27 @@
         </v-card>
       </v-img>
       <v-card color="blue" tile class="pt-10 d-flex flex-column">
-        <div class="text-center white--text">
+        <div class="text-center white--text mb-10 korean-text">
           <div class="h4 nanum font-weight-black">스피킹 안 되는 이유</div>
           <div class="h5 nanum font-weight-thin">
             메가토킹에서 알려드립니다.
           </div>
         </div>
-      </v-card>
-      <v-card color="blue lighten-2" class="rounded-xl">
-        <div style="height: 100%; border: 5px solid white">
-          <div>다릅니다.</div>
-          <div>의식할 순 없지만 내가 실력이 늘어나는 것</div>
-        </div>
+        <v-container>
+          <v-row>
+            <v-col cols="12" sm="6" md="4">
+              <v-card color="blue" height="200">
+                <div
+                  style="border: 3px solid white; height: 100%"
+                  class="pa-5 korean-text"
+                >
+                  <div>다릅니다</div>
+                  <div>의식할 순 없지만 내가 실력이 늘어나는 것</div>
+                </div>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
       </v-card>
     </v-container>
   </v-app>
