@@ -1,11 +1,11 @@
 <template>
   <v-app>
-    <v-container class="py-0">
+    <v-container class="py-0 px-0" :fluid="isMobile">
       <v-img src="../assets/bg1.jpg" :height="isMobile ? '' : '100vh'" contain>
         <v-card
           flat
           color="#000000CD"
-          class="pa-10 d-flex flex-column"
+          class="pa-5 pa-md-10 d-flex flex-column"
           :height="isMobile ? '' : '100vh'"
           tile
         >
@@ -23,7 +23,7 @@
             color="#FFFFFF2D"
             flat
           >
-            <div class="d-flex flex-wrap align-center justify-center mb-5">
+            <div class="d-flex align-center justify-center mb-5">
               <div class="h4 white--text mr-3">Q</div>
               <v-card color="blue" class="rounded-lg">
                 <v-card-text class="h6 white--text korean-text">
@@ -36,7 +36,7 @@
               <v-card color="blue" class="rounded-lg">
                 <v-card-text class="h6 white--text korean-text">
                   광고를 보고 유명 사이트에서 수강을
-                  <br />
+                  <br v-if="!isMobile" />
                   했지만 얼마 못 가 포기하셨나요 ?
                 </v-card-text>
               </v-card>
@@ -45,7 +45,7 @@
               <div class="h4 white--text mr-3">Q</div>
               <v-card color="blue" class="rounded-lg">
                 <v-card-text class="h6 white--text korean-text">
-                  일대일 수강을 하고 싶지만 <br />
+                  일대일 수강을 하고 싶지만 <br v-if="!isMobile" />
                   너무 가격이 부담되셨나요?
                 </v-card-text>
               </v-card>
