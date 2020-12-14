@@ -14,7 +14,7 @@
               >
                 <span class="font-weight-black"> 영.어. </span>
                 <span style="color: #262626" class="font-weight-regular">
-                  가 어려운이유 이제 아셔야 합니다.
+                  가 어려운 이유 이제 아셔야 합니다.
                 </span>
               </div>
               <v-carousel
@@ -41,7 +41,11 @@
                       <div class="d-flex justify-center">
                         <div
                           class="mr-7 d-flex flex-column"
-                          @click="carousel = carousel + 1"
+                          @click="
+                            carousel == 2
+                              ? $router.push('/advertisement')
+                              : (carousel = carousel + 1)
+                          "
                         >
                           <v-hover v-slot="{ hover }">
                             <v-icon
@@ -59,7 +63,11 @@
                         </div>
                         <div
                           class="ml-7 d-flex flex-column"
-                          @click="carousel = carousel + 1"
+                          @click="
+                            carousel == 2
+                              ? $router.push('/advertisement')
+                              : (carousel = carousel + 1)
+                          "
                         >
                           <v-hover v-slot="{ hover }">
                             <v-icon
@@ -89,7 +97,8 @@
 </template>
 
 <script>
-// @ is an alias to /src
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 export default {
   data() {

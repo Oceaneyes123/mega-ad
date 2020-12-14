@@ -8,6 +8,11 @@ const routes = [
     path: "/",
     name: "Home",
     component: require("../views/Home.vue").default
+  },
+  {
+    path: "/advertisement",
+    name: "Advertisement",
+    component: require("../views/Advertisement.vue").default
   }
 ];
 
