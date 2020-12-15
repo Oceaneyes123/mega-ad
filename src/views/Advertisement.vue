@@ -244,10 +244,170 @@
           </v-card>
         </v-img>
         <v-img src="../assets/education.jpg">
-          <v-card height="100%" color="#2196f3CF"></v-card>
+          <v-card height="100%" color="#2282ceCF" class="pa-5 pa-md-10">
+            <div
+              class="text-center white--text font-weight-bold"
+              :class="isMobile ? 'h5' : 'h3'"
+            >
+              최고의 강사!
+            </div>
+            <div
+              class="text-center white--text font-weight-bold"
+              :class="isMobile ? 'h5' : 'h3'"
+            >
+              메가토킹 선생님은 다릅니다.
+            </div>
+            <v-container>
+              <v-row>
+                <v-col cols="12" md="4">
+                  <div class="d-flex flex-column justify-center align-center">
+                    <v-img src="../assets/logo.png"></v-img>
+                    <div class="white--text text-center h6">
+                      TESOL 이수 <br />
+                      <v-icon color="white">fas fa-arrow-right</v-icon> (
+                      회사지원 프로그램 )
+                    </div>
+                  </div>
+                </v-col>
+                <v-col cols="12" md="4">
+                  <div class="d-flex flex-column justify-center align-center">
+                    <v-img src="../assets/logo.png"></v-img>
+                    <div class="white--text text-center h6 korean-text">
+                      사회보장제도가입 <br />
+                      건강보험, 주택기금가입 <br />
+                      주치의제도 <br />
+                      업계최고수준대우 <br />
+                      노동청 규정준수
+                    </div>
+                  </div>
+                </v-col>
+                <v-col cols="12" md="4">
+                  <div class="d-flex flex-column justify-center align-center">
+                    <v-img src="../assets/logo.png"></v-img>
+                    <div class="white--text text-center h6">
+                      훈련생 제도 <br />
+                      신입 / 기존 <br />
+                      강사교육 프로그램 <br />
+                      재교육프로그램
+                    </div>
+                  </div>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-card>
+        </v-img>
+        <v-img src="../assets/training.jpg">
+          <v-card
+            height="100%"
+            color="#2282ceDF"
+            class="pa-5 pa-md-10 d-flex flex-column"
+          >
+            <div
+              class="text-center white--text font-weight-bold korean-text nanum"
+              :class="isMobile ? 'h5' : 'h3'"
+            >
+              편리한 학습현황!
+            </div>
+            <div
+              class="text-center white--text font-weight-bold korean-text nanum"
+              :class="isMobile ? 'h6' : 'h4'"
+            >
+              담당 강사로부터 수업녹음파일, 평가서 등을 보고 받을 수 있습니다.
+            </div>
+            <v-container class="my-auto">
+              <v-row justify="center">
+                <v-col cols="7">
+                  <div class="d-flex">
+                    <v-img src="../assets/logo.png" class="mr-5"></v-img>
+                    <div>
+                      <div
+                        class="korean-text mb-3 nanum font-weight-bold"
+                        :class="isMobile ? 'h6' : 'h4'"
+                        style="color: #ca471b"
+                      >
+                        디테일한 수강 정보
+                      </div>
+                      <div
+                        class="white--text korean-text"
+                        :class="isMobile ? '' : 'h6'"
+                      >
+                        학습자의 학습과정, 기간, 담당강사, 수업스케줄 및
+                        교재정보 등을 보고하며 학습자는 수업홀드기능을 이용할 수
+                        있습니다.
+                      </div>
+                    </div>
+                  </div>
+                </v-col>
+                <v-col cols="7">
+                  <div class="d-flex">
+                    <v-img src="../assets/logo.png" class="mr-5"></v-img>
+                    <div>
+                      <div
+                        class="korean-text mb-3 nanum font-weight-bold"
+                        :class="isMobile ? 'h6' : 'h4'"
+                        style="color: #ca471b"
+                      >
+                        다양한 컨텐츠
+                      </div>
+                      <div
+                        class="white--text korean-text"
+                        :class="isMobile ? '' : 'h6'"
+                      >
+                        별도의 교재구입 없이 자체 제공되는 교재를 이용하여
+                        수업할 수 있으며 교재는 전자책 형태로 이용할 수
+                        있습니다.
+                      </div>
+                    </div>
+                  </div>
+                </v-col>
+                <v-col cols="7">
+                  <div class="d-flex">
+                    <v-img src="../assets/logo.png" class="mr-5"></v-img>
+                    <div>
+                      <div
+                        class="korean-text mb-3 nanum font-weight-bold"
+                        :class="isMobile ? 'h6' : 'h4'"
+                        style="color: #ca471b"
+                      >
+                        수강 캘린더
+                      </div>
+                      <div
+                        class="white--text korean-text"
+                        :class="isMobile ? '' : 'h6'"
+                      >
+                        수강캘린더를 통해 학습자의 출석여부, 수업평가서를
+                        확인하실 수 있습니다. 또한, 수업직후 업로드 되는
+                        수업녹음파일을 실시간으로 확인하실 수 있습니다.
+                      </div>
+                    </div>
+                  </div>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-card>
         </v-img>
         <v-img src="../assets/book.jpg">
-          <v-card height="100%" color="#2196f3CF"></v-card>
+          <v-card
+            height="100%"
+            color="#2196f3CF"
+            class="pa-5 pa-md-10 d-flex flex-column"
+          >
+            <div
+              class="text-center white--text font-weight-bold korean-text nanum"
+              :class="isMobile ? 'h5' : 'h3'"
+            >
+              지금부터 외국인 선생님과 <br v-if="!isMobile" />
+              즐거운 변화를 시작하세요.
+            </div>
+            <div style="height: 100%">
+              <iframe
+                src="https://phone.megatalking.com/m_leveltest_add.htm"
+                frameborder="0"
+                width="100%"
+                height="100%"
+              ></iframe>
+            </div>
+          </v-card>
         </v-img>
       </v-card>
     </v-container>
