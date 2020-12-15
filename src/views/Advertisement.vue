@@ -52,35 +52,131 @@
             </div>
           </v-card>
           <div class="text-center mt-16 white--text korean-text">
-            <div class="h4 nanum font-weight-black">스피킹 안 되는 이유</div>
-            <div class="h5 nanum font-weight-thin">
-              메가토킹에서 알려드립니다.
+            <div class="h4 nanum font-weight-black">
+              왜? 스피킹 실력은 <br />
+              잘 늘지 않을까요?
             </div>
           </div>
         </v-card>
       </v-img>
-      <v-card color="blue" tile class="pt-10 d-flex flex-column">
+      <v-card
+        color="blue"
+        tile
+        class="pt-10 d-flex flex-column"
+        :height="!isMobile ? '700px' : ''"
+      >
         <div class="text-center white--text mb-10 korean-text">
           <div class="h4 nanum font-weight-black">스피킹 안 되는 이유</div>
           <div class="h5 nanum font-weight-thin">
             메가토킹에서 알려드립니다.
           </div>
         </div>
-        <v-container>
+        <v-container class="my-auto">
           <v-row>
-            <v-col cols="12" sm="6" md="4">
+            <v-col cols="12" md="4" class="mb-5">
               <v-card color="blue" height="200">
+                <v-card
+                  color="white"
+                  class="h6 nanum pa-2 rounded-pill text-center"
+                  style="
+                    position: absolute;
+                    top: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 70%;
+                  "
+                  >외현기억 VS 암묵기억
+                </v-card>
                 <div
                   style="border: 3px solid white; height: 100%"
-                  class="pa-5 korean-text"
+                  class="pa-5 korean-text d-flex flex-column"
                 >
-                  <div>다릅니다</div>
-                  <div>의식할 순 없지만 내가 실력이 늘어나는 것</div>
+                  <div class="my-auto">
+                    <div class="font-weight-bold">다릅니다</div>
+                    <div>의식할 순 없지만 내가 실력이 늘어나는 것</div>
+                    <div class="mt-3 font-weight-bold">암묵기억</div>
+                    <div>
+                      운전, 악기연주와 같이 몸에 배인 기억의 방식입니다.
+                    </div>
+                  </div>
+                </div>
+              </v-card>
+            </v-col>
+            <v-col cols="12" md="4" class="mb-5">
+              <v-card color="blue" height="200">
+                <v-card
+                  color="white"
+                  class="h6 nanum pa-2 rounded-pill text-center"
+                  style="
+                    position: absolute;
+                    top: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 70%;
+                  "
+                >
+                  스피킹은 ?
+                </v-card>
+                <div
+                  style="border: 3px solid white; height: 100%"
+                  class="pa-5 korean-text d-flex flex-column"
+                >
+                  <div class="my-auto text-center">
+                    <div class="font-weight-bold">
+                      영어를 온전히 구사하기 위해서는 영어자체가
+                    </div>
+                    <div class="mt-3">
+                      <span class="font-weight-black" style="font-size: larger"
+                        >암묵기억</span
+                      >
+                      으로 각인되어 있어야 합니다
+                    </div>
+                    <div>
+                      필기시험을 잘 보더라도 스피킹이 잘 안 되는 이유입니다.
+                    </div>
+                  </div>
+                </div>
+              </v-card>
+            </v-col>
+            <v-col cols="12" md="4" class="mb-5">
+              <v-card color="blue" height="200">
+                <v-card
+                  color="white"
+                  class="h6 nanum pa-2 rounded-pill text-center"
+                  style="
+                    position: absolute;
+                    top: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 70%;
+                  "
+                >
+                  왜 ?
+                </v-card>
+                <div
+                  style="border: 3px solid white; height: 100%"
+                  class="pa-5 korean-text d-flex flex-column"
+                >
+                  <div class="my-auto text-center">
+                    <div class="font-weight-bold">
+                      왜? 스피킹 실력이 좀처럼 늘지 않을까요?
+                      <div class="mt-3">
+                        <v-icon>fas fa-arrow-right</v-icon>
+                        몸에 배이도록 하는
+                      </div>
+                      <div>효과적인 연습이 필요합니다</div>
+                    </div>
+                  </div>
                 </div>
               </v-card>
             </v-col>
           </v-row>
         </v-container>
+      </v-card>
+      <v-card tile>
+        <v-img src="../assets/bg3.jpg">
+          <v-card color="#000000CD" flat height="100%"> </v-card>
+        </v-img>
       </v-card>
     </v-container>
   </v-app>
