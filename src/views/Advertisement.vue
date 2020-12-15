@@ -175,7 +175,73 @@
       </v-card>
       <v-card tile>
         <v-img src="../assets/bg3.jpg">
-          <v-card color="#000000CD" flat height="100%"> </v-card>
+          <v-card class="pa-5 pa-md-10" color="#000000DF" flat height="100%">
+            <div
+              class="text-center font-weight-bold white--text"
+              :class="isMobile ? 'h5' : 'h3'"
+            >
+              스피킹!
+            </div>
+            <div
+              class="text-center h3 font-weight-bold white--text mb-10"
+              :class="isMobile ? 'h5' : 'h3'"
+            >
+              어떻게 잘 할 수 있을까요 ?
+            </div>
+            <div class="pa-0 pa-md-10">
+              <div
+                class="font-weight-bold white--text mb-3 mb-md-5"
+                :class="isMobile ? 'h6' : 'h4'"
+              >
+                첫째,
+              </div>
+              <div
+                class="font-weight-bold blue--text korean-text mb-10 nanum text-center"
+                :class="isMobile ? 'h6' : 'h4'"
+              >
+                영어를 모국어로 사용하는 외국인과의 지속적인 스피킹 연습이
+                필요합니다.
+              </div>
+              <div
+                class="font-weight-bold white--text mb-3 mb-md-5"
+                :class="isMobile ? 'h6' : 'h4'"
+              >
+                둘째,
+              </div>
+              <div
+                class="font-weight-bold blue--text korean-text mb-10 nanum text-center"
+                :class="isMobile ? 'h6' : 'h4'"
+              >
+                흥미로운 컨텐츠와 커리큘럼으로 살아있는 학습이 되도록 해야
+                합니다.
+              </div>
+              <div
+                class="font-weight-bold white--text mb-3 mb-md-5"
+                :class="isMobile ? 'h6' : 'h4'"
+              >
+                셋째,
+              </div>
+              <div
+                class="font-weight-bold blue--text korean-text mb-10 nanum text-center"
+                :class="isMobile ? 'h6' : 'h4'"
+              >
+                지속적인 피드백을 받으며 잘못된 표현과 발음을 교정해 나가야
+                합니다.
+              </div>
+              <div
+                class="font-weight-bold white--text mb-3 mb-md-5"
+                :class="isMobile ? 'h6' : 'h4'"
+              >
+                넷째,
+              </div>
+              <div
+                class="font-weight-bold blue--text korean-text mb-10 nanum text-center"
+                :class="isMobile ? 'h6' : 'h4'"
+              >
+                오랜 기간 동안 검증되고 노하우가 있는 사이트를 이용해야 합니다.
+              </div>
+            </div>
+          </v-card>
         </v-img>
       </v-card>
     </v-container>
