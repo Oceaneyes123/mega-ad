@@ -243,6 +243,12 @@
             </div>
           </v-card>
         </v-img>
+        <v-img src="../assets/education.jpg">
+          <v-card height="100%" color="#2196f3CF"></v-card>
+        </v-img>
+        <v-img src="../assets/book.jpg">
+          <v-card height="100%" color="#2196f3CF"></v-card>
+        </v-img>
       </v-card>
     </v-container>
   </v-app>
