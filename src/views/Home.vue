@@ -13,7 +13,9 @@
                 :class="isMobile ? 'h6' : 'h4'"
                 v-if="carousel == 0"
               >
-                <span class="font-weight-black"> 영.어. </span>
+                <span class="font-weight-black" style="font-size: larger">
+                  영.어.
+                </span>
                 <span style="color: #262626" class="font-weight-regular">
                   가 어려운 이유 이제 아셔야 합니다.
                 </span>
@@ -23,13 +25,11 @@
                 :class="isMobile ? 'h6' : 'h4'"
                 v-if="carousel == 1"
               >
-                <span class="font-weight-black">스피</span>
+                <span class="font-weight-black" style="font-size: larger"
+                  >스피킹!
+                </span>
                 <span style="color: #262626" class="font-weight-regular"
-                  >공부하시지</span
-                >
-                <span class="font-weight-black">킹! </span>
-                <span style="color: #262626" class="font-weight-regular"
-                  >잘못된 방법으로 않으셨나요?
+                  >잘못된 방법으로 공부하시지 않으셨나요?
                 </span>
               </div>
               <div
@@ -37,7 +37,9 @@
                 :class="isMobile ? 'h6' : 'h4'"
                 v-if="carousel == 2"
               >
-                <span class="font-weight-black"> 스피킹 </span>
+                <span class="font-weight-black" style="font-size: larger">
+                  스피킹
+                </span>
                 <span style="color: #262626" class="font-weight-regular">
                   실력이 좀처럼 늘지 않으시나요?
                 </span>

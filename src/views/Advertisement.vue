@@ -13,7 +13,9 @@
             class="nanum py-10 text-center korean-text white--text"
             :class="isMobile ? 'h6' : 'h4'"
           >
-            <span class="font-weight-black"> 영.어. </span>
+            <span class="font-weight-black" style="font-size: larger">
+              영.어.
+            </span>
             <span style="color: #d6d6d6" class="font-weight-regular">
               가 어려운이유 이제 아셔야 합니다.
             </span>
@@ -77,7 +79,7 @@
               <v-card color="blue" height="200">
                 <v-card
                   color="white"
-                  class="h6 nanum pa-2 rounded-pill text-center"
+                  class="h6 nanum pa-2 rounded-pill text-center font-weight-black"
                   style="
                     position: absolute;
                     top: -20px;
@@ -92,8 +94,10 @@
                   class="pa-5 korean-text d-flex flex-column"
                 >
                   <div class="my-auto">
-                    <div class="font-weight-bold">다릅니다</div>
-                    <div>의식할 순 없지만 내가 실력이 늘어나는 것</div>
+                    <div class="font-weight-bold">외현기억</div>
+                    <div>
+                      필기시험을 치를 때 기억을 끄집어 내는 기억의 방식입니다.
+                    </div>
                     <div class="mt-3 font-weight-bold">암묵기억</div>
                     <div>
                       운전, 악기연주와 같이 몸에 배인 기억의 방식입니다.
@@ -106,7 +110,7 @@
               <v-card color="blue" height="200">
                 <v-card
                   color="white"
-                  class="h6 nanum pa-2 rounded-pill text-center"
+                  class="h6 nanum pa-2 rounded-pill text-center font-weight-black"
                   style="
                     position: absolute;
                     top: -20px;
@@ -142,7 +146,7 @@
               <v-card color="blue" height="200">
                 <v-card
                   color="white"
-                  class="h6 nanum pa-2 rounded-pill text-center"
+                  class="h6 nanum pa-2 rounded-pill text-center font-weight-black"
                   style="
                     position: absolute;
                     top: -20px;
@@ -191,7 +195,7 @@
             <div class="pa-0 pa-md-10">
               <div
                 class="font-weight-bold white--text mb-3 mb-md-5"
-                :class="isMobile ? 'h6' : 'h4'"
+                :class="isMobile ? 'h5' : 'h3'"
               >
                 첫째,
               </div>
@@ -204,7 +208,7 @@
               </div>
               <div
                 class="font-weight-bold white--text mb-3 mb-md-5"
-                :class="isMobile ? 'h6' : 'h4'"
+                :class="isMobile ? 'h5' : 'h3'"
               >
                 둘째,
               </div>
@@ -217,7 +221,7 @@
               </div>
               <div
                 class="font-weight-bold white--text mb-3 mb-md-5"
-                :class="isMobile ? 'h6' : 'h4'"
+                :class="isMobile ? 'h5' : 'h3'"
               >
                 셋째,
               </div>
@@ -230,7 +234,7 @@
               </div>
               <div
                 class="font-weight-bold white--text mb-3 mb-md-5"
-                :class="isMobile ? 'h6' : 'h4'"
+                :class="isMobile ? 'h5' : 'h3'"
               >
                 넷째,
               </div>
@@ -265,7 +269,11 @@
               <v-row>
                 <v-col cols="12" md="4">
                   <div class="d-flex flex-column justify-center align-center">
-                    <v-img src="../assets/ABC.png" width="200"></v-img>
+                    <v-img
+                      src="../assets/setA.png"
+                      width="200"
+                      class="mb-3"
+                    ></v-img>
                     <div class="white--text text-center h6">
                       TESOL 이수 <br />
                       <v-icon color="white">fas fa-arrow-right</v-icon> (
@@ -275,7 +283,11 @@
                 </v-col>
                 <v-col cols="12" md="4">
                   <div class="d-flex flex-column justify-center align-center">
-                    <v-img src="../assets/ABC2.png" width="200"></v-img>
+                    <v-img
+                      src="../assets/set2.png"
+                      width="200"
+                      class="mb-3"
+                    ></v-img>
                     <div class="white--text text-center h6 korean-text">
                       사회보장제도가입 <br />
                       건강보험, 주택기금가입 <br />
@@ -287,7 +299,11 @@
                 </v-col>
                 <v-col cols="12" md="4">
                   <div class="d-flex flex-column justify-center align-center">
-                    <v-img src="../assets/ABC3.png" width="200"></v-img>
+                    <v-img
+                      src="../assets/setC.png"
+                      width="200"
+                      class="mb-3"
+                    ></v-img>
                     <div class="white--text text-center h6">
                       훈련생 제도 <br />
                       신입 / 기존 <br />
@@ -321,9 +337,13 @@
             <v-container class="my-auto">
               <v-row justify="center">
                 <v-col cols="7">
-                  <div class="d-flex">
-                    <v-img src="../assets/logo.png" class="mr-5"></v-img>
-                    <div>
+                  <div class="d-flex flex-column flex-md-row">
+                    <v-img
+                      src="../assets/set4.webp"
+                      class="mr-md-5"
+                      width="200"
+                    ></v-img>
+                    <div class="text-center text-md-left">
                       <div
                         class="korean-text mb-3 nanum font-weight-bold"
                         :class="isMobile ? 'h6' : 'h4'"
@@ -343,9 +363,9 @@
                   </div>
                 </v-col>
                 <v-col cols="7">
-                  <div class="d-flex">
-                    <v-img src="../assets/logo.png" class="mr-5"></v-img>
-                    <div>
+                  <div class="d-flex flex-column flex-md-row">
+                    <v-img src="../assets/logo.png" class="mr-md-5"></v-img>
+                    <div class="text-center text-md-left">
                       <div
                         class="korean-text mb-3 nanum font-weight-bold"
                         :class="isMobile ? 'h6' : 'h4'"
@@ -365,9 +385,13 @@
                   </div>
                 </v-col>
                 <v-col cols="7">
-                  <div class="d-flex">
-                    <v-img src="../assets/logo.png" class="mr-5"></v-img>
-                    <div>
+                  <div class="d-flex flex-column flex-md-row">
+                    <v-img
+                      src="../assets/set6.png"
+                      width="200"
+                      class="mr-md-5"
+                    ></v-img>
+                    <div class="text-center text-md-left">
                       <div
                         class="korean-text mb-3 nanum font-weight-bold"
                         :class="isMobile ? 'h6' : 'h4'"
@@ -408,7 +432,7 @@
                 src="https://phone.megatalking.com/m_leveltest_add.htm"
                 frameborder="0"
                 width="100%"
-                height="100%"
+                :height="isMobile ? '900' : '100%'"
               ></iframe>
             </div>
           </v-card>
@@ -420,6 +444,9 @@
 
 <script>
 // @ is an alias to /src
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default {
   data() {
@@ -449,6 +476,7 @@ export default {
 
   created() {
     window.addEventListener("resize", this.onWindowResize);
+    AOS.init();
   },
   destroyed() {
     window.removeEventListener("resize", this.onWindowResize);
