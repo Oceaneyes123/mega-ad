@@ -244,7 +244,11 @@
           </v-card>
         </v-img>
         <v-img src="../assets/education.jpg">
-          <v-card height="100%" color="#2282ceCF" class="pa-5 pa-md-10">
+          <v-card
+            height="100%"
+            color="#2282ceCF"
+            class="pa-5 pa-md-10 d-flex flex-column"
+          >
             <div
               class="text-center white--text font-weight-bold"
               :class="isMobile ? 'h5' : 'h3'"
@@ -257,11 +261,11 @@
             >
               메가토킹 선생님은 다릅니다.
             </div>
-            <v-container>
+            <v-container class="my-auto">
               <v-row>
                 <v-col cols="12" md="4">
                   <div class="d-flex flex-column justify-center align-center">
-                    <v-img src="../assets/logo.png"></v-img>
+                    <v-img src="../assets/img1.png" width="200"></v-img>
                     <div class="white--text text-center h6">
                       TESOL 이수 <br />
                       <v-icon color="white">fas fa-arrow-right</v-icon> (
@@ -271,7 +275,7 @@
                 </v-col>
                 <v-col cols="12" md="4">
                   <div class="d-flex flex-column justify-center align-center">
-                    <v-img src="../assets/logo.png"></v-img>
+                    <v-img src="../assets/img2.png" width="200"></v-img>
                     <div class="white--text text-center h6 korean-text">
                       사회보장제도가입 <br />
                       건강보험, 주택기금가입 <br />
@@ -283,7 +287,7 @@
                 </v-col>
                 <v-col cols="12" md="4">
                   <div class="d-flex flex-column justify-center align-center">
-                    <v-img src="../assets/logo.png"></v-img>
+                    <v-img src="../assets/img3.png" width="200"></v-img>
                     <div class="white--text text-center h6">
                       훈련생 제도 <br />
                       신입 / 기존 <br />
