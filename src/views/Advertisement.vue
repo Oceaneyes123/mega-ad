@@ -311,7 +311,11 @@
             <v-container class="my-auto">
               <v-row>
                 <v-col cols="12" md="4">
-                  <div class="d-flex flex-column justify-center align-center">
+                  <div
+                    class="d-flex flex-column justify-center align-center"
+                    data-aos="zoom-in"
+                    data-aos-duration="1400"
+                  >
                     <v-img
                       src="../assets/setA.png"
                       width="200"
@@ -325,7 +329,11 @@
                   </div>
                 </v-col>
                 <v-col cols="12" md="4">
-                  <div class="d-flex flex-column justify-center align-center">
+                  <div
+                    class="d-flex flex-column justify-center align-center"
+                    data-aos="zoom-in"
+                    data-aos-duration="1700"
+                  >
                     <v-img
                       src="../assets/set2.png"
                       width="200"
@@ -341,7 +349,11 @@
                   </div>
                 </v-col>
                 <v-col cols="12" md="4">
-                  <div class="d-flex flex-column justify-center align-center">
+                  <div
+                    class="d-flex flex-column justify-center align-center"
+                    data-aos="zoom-in"
+                    data-aos-duration="2000"
+                  >
                     <v-img
                       src="../assets/set3.png"
                       width="200"
@@ -385,8 +397,14 @@
                       src="../assets/set4.webp"
                       class="mr-md-5"
                       width="200"
+                      :data-aos="isMobile ? 'zoom-in' : 'fade-right'"
+                      data-aos-duration="1400"
                     ></v-img>
-                    <div class="text-center text-md-left">
+                    <div
+                      class="text-center text-md-left"
+                      :data-aos="isMobile ? 'zoom-in' : 'fade-left'"
+                      data-aos-duration="1400"
+                    >
                       <div
                         class="korean-text mb-3 nanum font-weight-bold"
                         :class="isMobile ? 'h6' : 'h4'"
@@ -397,6 +415,8 @@
                       <div
                         class="white--text korean-text"
                         :class="isMobile ? '' : 'h6'"
+                        :data-aos="isMobile ? 'zoom-in' : 'fade-left'"
+                        data-aos-duration="1400"
                       >
                         학습자의 학습과정, 기간, 담당강사, 수업스케줄 및
                         교재정보 등을 보고하며 학습자는 수업홀드기능을 이용할 수
@@ -411,18 +431,24 @@
                       src="../assets/set5.png"
                       width="200"
                       class="mr-md-5"
+                      :data-aos="isMobile ? 'zoom-in' : 'fade-right'"
+                      data-aos-duration="1400"
                     ></v-img>
                     <div class="text-center text-md-left">
                       <div
                         class="korean-text mb-3 nanum font-weight-bold"
                         :class="isMobile ? 'h6' : 'h4'"
                         style="color: #ca471b"
+                        :data-aos="isMobile ? 'zoom-in' : 'fade-left'"
+                        data-aos-duration="1400"
                       >
                         다양한 컨텐츠
                       </div>
                       <div
                         class="white--text korean-text"
                         :class="isMobile ? '' : 'h6'"
+                        :data-aos="isMobile ? 'zoom-in' : 'fade-left'"
+                        data-aos-duration="1400"
                       >
                         별도의 교재구입 없이 자체 제공되는 교재를 이용하여
                         수업할 수 있으며 교재는 전자책 형태로 이용할 수
@@ -437,18 +463,24 @@
                       src="../assets/set6.png"
                       width="200"
                       class="mr-md-5"
+                      :data-aos="isMobile ? 'zoom-in' : 'fade-right'"
+                      data-aos-duration="1400"
                     ></v-img>
                     <div class="text-center text-md-left">
                       <div
                         class="korean-text mb-3 nanum font-weight-bold"
                         :class="isMobile ? 'h6' : 'h4'"
                         style="color: #ca471b"
+                        :data-aos="isMobile ? 'zoom-in' : 'fade-left'"
+                        data-aos-duration="1400"
                       >
                         수강 캘린더
                       </div>
                       <div
                         class="white--text korean-text"
                         :class="isMobile ? '' : 'h6'"
+                        :data-aos="isMobile ? 'zoom-in' : 'fade-left'"
+                        data-aos-duration="1400"
                       >
                         수강캘린더를 통해 학습자의 출석여부, 수업평가서를
                         확인하실 수 있습니다. 또한, 수업직후 업로드 되는
