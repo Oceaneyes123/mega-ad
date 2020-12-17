@@ -12,6 +12,7 @@
           <div
             class="nanum py-10 text-center korean-text white--text"
             :class="isMobile ? 'h6' : 'h4'"
+            data-aos="fade-down"
           >
             <span class="font-weight-black" style="font-size: larger">
               영.어.
@@ -25,7 +26,11 @@
             color="#FFFFFF2D"
             flat
           >
-            <div class="d-flex align-center justify-center mb-5">
+            <div
+              class="d-flex align-center justify-center mb-5"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div class="h4 white--text mr-3">Q</div>
               <v-card color="blue" class="rounded-lg">
                 <v-card-text class="h6 white--text korean-text">
@@ -33,7 +38,11 @@
                 </v-card-text>
               </v-card>
             </div>
-            <div class="d-flex align-center justify-center mb-5">
+            <div
+              class="d-flex align-center justify-center mb-5"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <div class="h4 white--text mr-3">Q</div>
               <v-card color="blue" class="rounded-lg">
                 <v-card-text class="h6 white--text korean-text">
@@ -43,7 +52,11 @@
                 </v-card-text>
               </v-card>
             </div>
-            <div class="d-flex align-center justify-center mb-5">
+            <div
+              class="d-flex align-center justify-center mb-5"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div class="h4 white--text mr-3">Q</div>
               <v-card color="blue" class="rounded-lg">
                 <v-card-text class="h6 white--text korean-text">
@@ -54,7 +67,7 @@
             </div>
           </v-card>
           <div class="text-center mt-16 white--text korean-text">
-            <div class="h4 nanum font-weight-black">
+            <div class="h4 nanum font-weight-black" data-aos="flip-down">
               왜? 스피킹 실력은 <br />
               잘 늘지 않을까요?
             </div>
@@ -67,7 +80,10 @@
         class="pt-10 d-flex flex-column"
         :height="!isMobile ? '700px' : ''"
       >
-        <div class="text-center white--text mb-10 korean-text">
+        <div
+          class="text-center white--text mb-10 korean-text"
+          data-aos="fade-up"
+        >
           <div class="h4 nanum font-weight-black">스피킹 안 되는 이유</div>
           <div class="h5 nanum font-weight-thin">
             메가토킹에서 알려드립니다.
@@ -76,7 +92,12 @@
         <v-container class="my-auto">
           <v-row>
             <v-col cols="12" md="4" class="mb-5">
-              <v-card color="blue" height="200">
+              <v-card
+                color="blue"
+                height="200"
+                data-aos="fade-up"
+                data-aos-duration="800"
+              >
                 <v-card
                   color="white"
                   class="h6 nanum pa-2 rounded-pill text-center font-weight-black"
@@ -107,7 +128,12 @@
               </v-card>
             </v-col>
             <v-col cols="12" md="4" class="mb-5">
-              <v-card color="blue" height="200">
+              <v-card
+                color="blue"
+                height="200"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <v-card
                   color="white"
                   class="h6 nanum pa-2 rounded-pill text-center font-weight-black"
@@ -143,7 +169,12 @@
               </v-card>
             </v-col>
             <v-col cols="12" md="4" class="mb-5">
-              <v-card color="blue" height="200">
+              <v-card
+                color="blue"
+                height="200"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+              >
                 <v-card
                   color="white"
                   class="h6 nanum pa-2 rounded-pill text-center font-weight-black"
@@ -180,28 +211,32 @@
       <v-card tile>
         <v-img src="../assets/bg3.jpg">
           <v-card class="pa-5 pa-md-10" color="#000000DF" flat height="100%">
-            <div
-              class="text-center font-weight-bold white--text"
-              :class="isMobile ? 'h5' : 'h3'"
-            >
-              스피킹!
-            </div>
-            <div
-              class="text-center h3 font-weight-bold white--text mb-10"
-              :class="isMobile ? 'h5' : 'h3'"
-            >
-              어떻게 잘 할 수 있을까요 ?
+            <div data-aos="fade-up">
+              <div
+                class="text-center font-weight-bold white--text"
+                :class="isMobile ? 'h5' : 'h3'"
+              >
+                스피킹!
+              </div>
+              <div
+                class="text-center h3 font-weight-bold white--text mb-10"
+                :class="isMobile ? 'h5' : 'h3'"
+              >
+                어떻게 잘 할 수 있을까요 ?
+              </div>
             </div>
             <div class="pa-0 pa-md-10">
               <div
                 class="font-weight-bold white--text mb-3 mb-md-5"
                 :class="isMobile ? 'h5' : 'h3'"
+                data-aos="fade-right"
               >
                 첫째,
               </div>
               <div
                 class="font-weight-bold blue--text korean-text mb-10 nanum text-center"
                 :class="isMobile ? 'h6' : 'h4'"
+                data-aos="zoom-in"
               >
                 영어를 모국어로 사용하는 외국인과의 지속적인 스피킹 연습이
                 필요합니다.
@@ -209,12 +244,14 @@
               <div
                 class="font-weight-bold white--text mb-3 mb-md-5"
                 :class="isMobile ? 'h5' : 'h3'"
+                data-aos="fade-right"
               >
                 둘째,
               </div>
               <div
                 class="font-weight-bold blue--text korean-text mb-10 nanum text-center"
                 :class="isMobile ? 'h6' : 'h4'"
+                data-aos="zoom-in"
               >
                 흥미로운 컨텐츠와 커리큘럼으로 살아있는 학습이 되도록 해야
                 합니다.
@@ -222,12 +259,14 @@
               <div
                 class="font-weight-bold white--text mb-3 mb-md-5"
                 :class="isMobile ? 'h5' : 'h3'"
+                data-aos="fade-right"
               >
                 셋째,
               </div>
               <div
                 class="font-weight-bold blue--text korean-text mb-10 nanum text-center"
                 :class="isMobile ? 'h6' : 'h4'"
+                data-aos="zoom-in"
               >
                 지속적인 피드백을 받으며 잘못된 표현과 발음을 교정해 나가야
                 합니다.
@@ -235,12 +274,14 @@
               <div
                 class="font-weight-bold white--text mb-3 mb-md-5"
                 :class="isMobile ? 'h5' : 'h3'"
+                data-aos="fade-right"
               >
                 넷째,
               </div>
               <div
                 class="font-weight-bold blue--text korean-text mb-10 nanum text-center"
                 :class="isMobile ? 'h6' : 'h4'"
+                data-aos="zoom-in"
               >
                 오랜 기간 동안 검증되고 노하우가 있는 사이트를 이용해야 합니다.
               </div>
@@ -253,17 +294,19 @@
             color="#2282ceCF"
             class="pa-5 pa-md-10 d-flex flex-column"
           >
-            <div
-              class="text-center white--text font-weight-bold"
-              :class="isMobile ? 'h5' : 'h3'"
-            >
-              최고의 강사!
-            </div>
-            <div
-              class="text-center white--text font-weight-bold"
-              :class="isMobile ? 'h5' : 'h3'"
-            >
-              메가토킹 선생님은 다릅니다.
+            <div data-aos="fade-up">
+              <div
+                class="text-center white--text font-weight-bold"
+                :class="isMobile ? 'h5' : 'h3'"
+              >
+                최고의 강사!
+              </div>
+              <div
+                class="text-center white--text font-weight-bold"
+                :class="isMobile ? 'h5' : 'h3'"
+              >
+                메가토킹 선생님은 다릅니다.
+              </div>
             </div>
             <v-container class="my-auto">
               <v-row>
@@ -300,7 +343,7 @@
                 <v-col cols="12" md="4">
                   <div class="d-flex flex-column justify-center align-center">
                     <v-img
-                      src="../assets/setC.png"
+                      src="../assets/set3.png"
                       width="200"
                       class="mb-3"
                     ></v-img>
@@ -364,7 +407,11 @@
                 </v-col>
                 <v-col cols="7">
                   <div class="d-flex flex-column flex-md-row">
-                    <v-img src="../assets/logo.png" class="mr-md-5"></v-img>
+                    <v-img
+                      src="../assets/set5.png"
+                      width="200"
+                      class="mr-md-5"
+                    ></v-img>
                     <div class="text-center text-md-left">
                       <div
                         class="korean-text mb-3 nanum font-weight-bold"
