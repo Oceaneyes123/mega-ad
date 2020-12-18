@@ -369,11 +369,12 @@
                 </v-col>
               </v-row>
               <v-row justify="center">
-                <v-col cols="12" md="4">
+                <v-col cols="12" sm="4">
                   <v-img
                     src="../assets/graphic.png"
-                    width="900"
+                    width="400"
                     data-aos="zoom-in"
+                    class="mx-auto"
                   >
                   </v-img>
                 </v-col>
@@ -402,13 +403,14 @@
             <v-container class="my-auto">
               <v-row justify="center">
                 <v-col cols="7">
-                  <div class="d-flex flex-column flex-md-row">
+                  <div class="d-flex flex-column flex-md-row ">
                     <v-img
                       src="../assets/analyze-icon.png"
-                      class="mr-md-5"
+                      class="mr-md-5 mx-auto"
                       width="200"
                       :data-aos="isMobile ? 'zoom-in' : 'fade-right'"
                       data-aos-duration="1400"
+                      contain
                     ></v-img>
                     <div
                       class="text-center text-md-left"
@@ -435,13 +437,14 @@
                   </div>
                 </v-col>
                 <v-col cols="7">
-                  <div class="d-flex flex-column flex-md-row ">
+                  <div class="d-flex flex-column flex-md-row justify-center">
                     <v-img
                       src="../assets/abc2-icon.png"
                       width="200"
-                      class="mr-md-5"
+                      class="mr-md-5 mx-auto"
                       :data-aos="isMobile ? 'zoom-in' : 'fade-right'"
                       data-aos-duration="1400"
+                      contain
                     ></v-img>
                     <div class="text-center text-md-left">
                       <div
@@ -466,13 +469,14 @@
                   </div>
                 </v-col>
                 <v-col cols="7">
-                  <div class="d-flex flex-column flex-md-row">
+                  <div class="d-flex flex-column flex-md-row justify-center">
                     <v-img
                       src="../assets/calendar-icon.png"
                       width="200"
-                      class="mr-md-5"
+                      class="mr-md-5 mx-auto"
                       :data-aos="isMobile ? 'zoom-in' : 'fade-right'"
                       data-aos-duration="1400"
+                      contain
                     ></v-img>
                     <div class="text-center text-md-left">
                       <div
