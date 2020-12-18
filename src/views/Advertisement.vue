@@ -317,11 +317,11 @@
                     data-aos-duration="1400"
                   >
                     <v-img
-                      src="../assets/setA.png"
+                      src="../assets/abc-icon.png"
                       width="200"
                       class="mb-3"
                     ></v-img>
-                    <div class="white--text text-center h6">
+                    <div class="text-center h6">
                       TESOL 이수 <br />
                       <v-icon color="white">fas fa-arrow-right</v-icon> (
                       회사지원 프로그램 )
@@ -335,7 +335,7 @@
                     data-aos-duration="1700"
                   >
                     <v-img
-                      src="../assets/set2.png"
+                      src="../assets/hands-icon.png"
                       width="200"
                       class="mb-3"
                     ></v-img>
@@ -355,17 +355,27 @@
                     data-aos-duration="2000"
                   >
                     <v-img
-                      src="../assets/set3.png"
+                      src="../assets/openbook-icon.png"
                       width="200"
                       class="mb-3"
                     ></v-img>
-                    <div class="white--text text-center h6">
+                    <div class="text-center h6">
                       훈련생 제도 <br />
                       신입 / 기존 <br />
                       강사교육 프로그램 <br />
                       재교육프로그램
                     </div>
                   </div>
+                </v-col>
+              </v-row>
+              <v-row justify="center">
+                <v-col cols="12" md="4">
+                  <v-img
+                    src="../assets/graphic.png"
+                    width="900"
+                    data-aos="zoom-in"
+                  >
+                  </v-img>
                 </v-col>
               </v-row>
             </v-container>
@@ -384,7 +394,7 @@
               편리한 학습현황!
             </div>
             <div
-              class="text-center white--text font-weight-bold korean-text nanum"
+              class="text-center white--text font-weight-bold korean-text nanum mb-10"
               :class="isMobile ? 'h6' : 'h4'"
             >
               담당 강사로부터 수업녹음파일, 평가서 등을 보고 받을 수 있습니다.
@@ -394,7 +404,7 @@
                 <v-col cols="7">
                   <div class="d-flex flex-column flex-md-row">
                     <v-img
-                      src="../assets/set4.webp"
+                      src="../assets/analyze-icon.png"
                       class="mr-md-5"
                       width="200"
                       :data-aos="isMobile ? 'zoom-in' : 'fade-right'"
@@ -406,9 +416,8 @@
                       data-aos-duration="1400"
                     >
                       <div
-                        class="korean-text mb-3 nanum font-weight-bold"
+                        class="korean-text mb-3 nanum font-weight-bold white--text"
                         :class="isMobile ? 'h6' : 'h4'"
-                        style="color: #ca471b"
                       >
                         디테일한 수강 정보
                       </div>
@@ -426,9 +435,9 @@
                   </div>
                 </v-col>
                 <v-col cols="7">
-                  <div class="d-flex flex-column flex-md-row">
+                  <div class="d-flex flex-column flex-md-row ">
                     <v-img
-                      src="../assets/set5.png"
+                      src="../assets/abc2-icon.png"
                       width="200"
                       class="mr-md-5"
                       :data-aos="isMobile ? 'zoom-in' : 'fade-right'"
@@ -436,9 +445,8 @@
                     ></v-img>
                     <div class="text-center text-md-left">
                       <div
-                        class="korean-text mb-3 nanum font-weight-bold"
+                        class="korean-text mb-3 nanum font-weight-bold white--text "
                         :class="isMobile ? 'h6' : 'h4'"
-                        style="color: #ca471b"
                         :data-aos="isMobile ? 'zoom-in' : 'fade-left'"
                         data-aos-duration="1400"
                       >
@@ -460,7 +468,7 @@
                 <v-col cols="7">
                   <div class="d-flex flex-column flex-md-row">
                     <v-img
-                      src="../assets/set6.png"
+                      src="../assets/calendar-icon.png"
                       width="200"
                       class="mr-md-5"
                       :data-aos="isMobile ? 'zoom-in' : 'fade-right'"
@@ -468,9 +476,8 @@
                     ></v-img>
                     <div class="text-center text-md-left">
                       <div
-                        class="korean-text mb-3 nanum font-weight-bold"
+                        class="korean-text mb-3 nanum font-weight-bold white--text"
                         :class="isMobile ? 'h6' : 'h4'"
-                        style="color: #ca471b"
                         :data-aos="isMobile ? 'zoom-in' : 'fade-left'"
                         data-aos-duration="1400"
                       >
@@ -505,6 +512,9 @@
             >
               지금부터 외국인 선생님과 <br v-if="!isMobile" />
               즐거운 변화를 시작하세요.
+            </div>
+            <div class="text-center white--text h6 my-10">
+              월 52,000원 부터
             </div>
             <div style="height: 100%">
               <iframe
