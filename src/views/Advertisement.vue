@@ -318,7 +318,7 @@
                   >
                     <v-img
                       src="../assets/abc-icon.png"
-                      width="200"
+                      width="175"
                       class="mb-3"
                     ></v-img>
                     <div class="text-center h6">
@@ -336,7 +336,7 @@
                   >
                     <v-img
                       src="../assets/hands-icon.png"
-                      width="200"
+                      width="175"
                       class="mb-3"
                     ></v-img>
                     <div class="white--text text-center h6 korean-text">
@@ -356,7 +356,7 @@
                   >
                     <v-img
                       src="../assets/openbook-icon.png"
-                      width="200"
+                      width="175"
                       class="mb-3"
                     ></v-img>
                     <div class="text-center h6">

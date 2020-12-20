@@ -1,55 +1,56 @@
 <template>
   <v-app>
-    <v-img src="../assets/background.jpg" :height="isMobile ? '' : '100vh'">
-      <v-container class="justify-center align-center fill-height">
+    <v-card dark flat tile>
+      <v-card height="100px" color="blue"></v-card>
+      <v-container class="justify-center align-center">
+        <div
+          class="nanum py-10 text-center korean-text"
+          :class="isMobile ? 'h6' : 'h4'"
+          v-if="carousel == 0"
+        >
+          <span class="font-weight-black" style="font-size: larger">
+            영.어.
+          </span>
+          <span class="font-weight-regular">
+            가 어려운 이유 이제 아셔야 합니다.
+          </span>
+        </div>
+        <div
+          class="nanum py-10 text-center korean-text"
+          :class="isMobile ? 'h6' : 'h4'"
+          v-if="carousel == 1"
+        >
+          <span class="font-weight-black" style="font-size: larger"
+            >스피킹!
+          </span>
+          <span class="font-weight-regular"
+            >잘못된 방법으로 공부하시지 않으셨나요?
+          </span>
+        </div>
+        <div
+          class="nanum py-10 text-center korean-text"
+          :class="isMobile ? 'h6' : 'h4'"
+          v-if="carousel == 2"
+        >
+          <span class="font-weight-black" style="font-size: larger">
+            스피킹
+          </span>
+          <span class="font-weight-regular">
+            실력이 좀처럼 늘지 않으시나요?
+          </span>
+        </div>
         <v-container>
           <v-card max-width="900" class="rounded-xl mx-auto" light>
             <div
               class="d-flex flex-column justify-center align-center"
               style="height: 100%"
             >
-              <div
-                class="nanum py-10 text-center korean-text"
-                :class="isMobile ? 'h6' : 'h4'"
-                v-if="carousel == 0"
-              >
-                <span class="font-weight-black" style="font-size: larger">
-                  영.어.
-                </span>
-                <span style="color: #262626" class="font-weight-regular">
-                  가 어려운 이유 이제 아셔야 합니다.
-                </span>
-              </div>
-              <div
-                class="nanum py-10 text-center korean-text"
-                :class="isMobile ? 'h6' : 'h4'"
-                v-if="carousel == 1"
-              >
-                <span class="font-weight-black" style="font-size: larger"
-                  >스피킹!
-                </span>
-                <span style="color: #262626" class="font-weight-regular"
-                  >잘못된 방법으로 공부하시지 않으셨나요?
-                </span>
-              </div>
-              <div
-                class="nanum py-10 text-center korean-text"
-                :class="isMobile ? 'h6' : 'h4'"
-                v-if="carousel == 2"
-              >
-                <span class="font-weight-black" style="font-size: larger">
-                  스피킹
-                </span>
-                <span style="color: #262626" class="font-weight-regular">
-                  실력이 좀처럼 늘지 않으시나요?
-                </span>
-              </div>
               <v-carousel
                 :show-arrows="false"
                 dark
                 :continuous="false"
                 touchless
-                class="rounded-bl-xl rounded-br-xl"
+                class="rounded-xl"
                 v-model="carousel"
               >
                 <v-carousel-item v-for="(item, i) in survey" :key="i">
@@ -119,7 +120,7 @@
           </v-card>
         </v-container>
       </v-container>
-    </v-img>
+    </v-card>
   </v-app>
 </template>
 
