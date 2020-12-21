@@ -91,7 +91,7 @@
         </div>
         <v-container class="my-auto">
           <v-row>
-            <v-col cols="12" md="4" class="mb-5">
+            <v-col cols="12" md="4" class="mb-10 mb-md-5">
               <v-card
                 color="blue"
                 height="200"
@@ -127,7 +127,7 @@
                 </div>
               </v-card>
             </v-col>
-            <v-col cols="12" md="4" class="mb-5">
+            <v-col cols="12" md="4" class="mb-10 mb-md-5">
               <v-card
                 color="blue"
                 height="200"
@@ -168,7 +168,7 @@
                 </div>
               </v-card>
             </v-col>
-            <v-col cols="12" md="4" class="mb-5">
+            <v-col cols="12" md="4" class="mb-10 mb-md-5">
               <v-card
                 color="blue"
                 height="200"
@@ -234,7 +234,7 @@
                 첫째,
               </div>
               <div
-                class="font-weight-bold blue--text korean-text mb-10 nanum text-center"
+                class="font-weight-bold blue--text korean-text mb-10 mb-md-15 nanum text-center"
                 :class="isMobile ? 'h6' : 'h4'"
                 data-aos="zoom-in"
               >
@@ -249,7 +249,7 @@
                 둘째,
               </div>
               <div
-                class="font-weight-bold blue--text korean-text mb-10 nanum text-center"
+                class="font-weight-bold blue--text korean-text mb-10 mb-md-15 nanum text-center"
                 :class="isMobile ? 'h6' : 'h4'"
                 data-aos="zoom-in"
               >
@@ -264,7 +264,7 @@
                 셋째,
               </div>
               <div
-                class="font-weight-bold blue--text korean-text mb-10 nanum text-center"
+                class="font-weight-bold blue--text korean-text mb-10 mb-md-15 nanum text-center"
                 :class="isMobile ? 'h6' : 'h4'"
                 data-aos="zoom-in"
               >
@@ -403,7 +403,7 @@
             <v-container class="my-auto">
               <v-row justify="center">
                 <v-col cols="7">
-                  <div class="d-flex flex-column flex-md-row ">
+                  <div class="d-flex flex-column flex-md-row">
                     <v-img
                       src="../assets/analyze-icon.png"
                       class="mr-md-5 mx-auto"
@@ -448,7 +448,7 @@
                     ></v-img>
                     <div class="text-center text-md-left">
                       <div
-                        class="korean-text mb-3 nanum font-weight-bold white--text "
+                        class="korean-text mb-3 nanum font-weight-bold white--text"
                         :class="isMobile ? 'h6' : 'h4'"
                         :data-aos="isMobile ? 'zoom-in' : 'fade-left'"
                         data-aos-duration="1400"
@@ -517,15 +517,13 @@
               지금부터 외국인 선생님과 <br v-if="!isMobile" />
               즐거운 변화를 시작하세요.
             </div>
-            <div class="text-center white--text h6 my-10">
-              월 52,000원 부터
-            </div>
+            <div class="text-center white--text h6 my-10">월 52,000원 부터</div>
             <div style="height: 100%">
               <iframe
                 src="https://phone.megatalking.com/m_leveltest_add.htm"
                 frameborder="0"
                 width="100%"
-                :height="isMobile ? '900' : '100%'"
+                height="900"
               ></iframe>
             </div>
           </v-card>
