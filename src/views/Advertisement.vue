@@ -5,24 +5,26 @@
         <v-card
           flat
           color="#000000CD"
-          class="pa-5 pa-md-10 d-flex flex-column"
+          class="px-8 py-15 pa-md-10 d-flex flex-column"
           :height="isMobile ? '' : '100vh'"
           tile
         >
           <div
             class="nanum py-10 text-center korean-text white--text"
-            :class="isMobile ? 'h6' : 'h4'"
+            :class="isMobile ? 'h4' : 'h4'"
             data-aos="fade-down"
           >
             <span class="font-weight-black" style="font-size: larger">
               영.어.
             </span>
+            <span style="color: #d6d6d6" class="font-weight-regular ">어려운이유 </span>
+            <br/>
             <span style="color: #d6d6d6" class="font-weight-regular">
-              가 어려운이유 이제 아셔야 합니다.
+              이제 아셔야 합니다.
             </span>
           </div>
           <v-card
-            class="d-flex flex-column pa-5 my-auto mx-auto rounded-xl"
+            class="d-flex flex-column pa-10 my-auto mx-auto rounded-xl"
             color="#FFFFFF2D"
             flat
           >
@@ -31,7 +33,7 @@
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <div class="h4 white--text mr-3">Q</div>
+              <div class="h6 white--text mr-3">Q</div>
               <v-card color="blue" class="rounded-lg">
                 <v-card-text class="h6 white--text korean-text">
                   장기 수강을 했는데도 실력이 늘지 않으셨나요 ?
@@ -43,7 +45,7 @@
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <div class="h4 white--text mr-3">Q</div>
+              <div class="h6 white--text mr-3">Q</div>
               <v-card color="blue" class="rounded-lg">
                 <v-card-text class="h6 white--text korean-text">
                   광고를 보고 유명 사이트에서 수강을
@@ -57,7 +59,7 @@
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              <div class="h4 white--text mr-3">Q</div>
+              <div class="h6 white--text mr-3">Q</div>
               <v-card color="blue" class="rounded-lg">
                 <v-card-text class="h6 white--text korean-text">
                   일대일 수강을 하고 싶지만 <br v-if="!isMobile" />
@@ -77,7 +79,7 @@
       <v-card
         color="blue"
         tile
-        class="pt-10 d-flex flex-column"
+        class="pt-10 px-8 d-flex flex-column "
         :height="!isMobile ? '700px' : ''"
       >
         <div
@@ -85,7 +87,7 @@
           data-aos="fade-up"
         >
           <div class="h4 nanum font-weight-black">스피킹 안 되는 이유</div>
-          <div class="h5 nanum font-weight-thin">
+          <div class="h5 nanum font-weight-thin pink--text text--lighten-4">
             메가토킹에서 알려드립니다.
           </div>
         </div>
@@ -94,7 +96,7 @@
             <v-col cols="12" md="4" class="mb-5">
               <v-card
                 color="blue"
-                height="200"
+                height="250"
                 data-aos="fade-up"
                 data-aos-duration="800"
               >
@@ -112,9 +114,9 @@
                 </v-card>
                 <div
                   style="border: 3px solid white; height: 100%"
-                  class="pa-5 korean-text d-flex flex-column"
+                  class="pa-5 korean-text d-flex flex-column white--text"
                 >
-                  <div class="my-auto">
+                  <div class="my-auto py-5">
                     <div class="font-weight-bold">외현기억</div>
                     <div>
                       필기시험을 치를 때 기억을 끄집어 내는 기억의 방식입니다.
@@ -130,7 +132,7 @@
             <v-col cols="12" md="4" class="mb-5">
               <v-card
                 color="blue"
-                height="200"
+                height="250"
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
@@ -149,21 +151,17 @@
                 </v-card>
                 <div
                   style="border: 3px solid white; height: 100%"
-                  class="pa-5 korean-text d-flex flex-column"
+                  class="pa-0 korean-text d-flex flex-column white--text"
                 >
-                  <div class="my-auto text-center">
+                  <div class="my-auto text-center py-5">
+                    <span>영어를 온전히 구사하기 위해서는 영어자체가</span>
                     <div class="font-weight-bold">
-                      영어를 온전히 구사하기 위해서는 영어자체가
+                      <span class="font-weight-black" style="font-size: larger">암묵기억</span> 으로 각인되어 있어야 합니다.
                     </div>
-                    <div class="mt-3">
-                      <span class="font-weight-black" style="font-size: larger"
-                        >암묵기억</span
-                      >
-                      으로 각인되어 있어야 합니다
-                    </div>
-                    <div>
+                    <br>
+                    <span class="">
                       필기시험을 잘 보더라도 스피킹이 잘 안 되는 이유입니다.
-                    </div>
+                    </span>
                   </div>
                 </div>
               </v-card>
@@ -171,7 +169,7 @@
             <v-col cols="12" md="4" class="mb-5">
               <v-card
                 color="blue"
-                height="200"
+                height="250"
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
@@ -190,13 +188,13 @@
                 </v-card>
                 <div
                   style="border: 3px solid white; height: 100%"
-                  class="pa-5 korean-text d-flex flex-column"
+                  class="pa-5 korean-text d-flex flex-column white--text"
                 >
                   <div class="my-auto text-center">
                     <div class="font-weight-bold">
                       왜? 스피킹 실력이 좀처럼 늘지 않을까요?
                       <div class="mt-3">
-                        <v-icon>fas fa-arrow-right</v-icon>
+                        <v-icon color="white" >fas fa-arrow-right</v-icon>
                         몸에 배이도록 하는
                       </div>
                       <div>효과적인 연습이 필요합니다</div>
@@ -210,7 +208,7 @@
       </v-card>
       <v-card tile>
         <v-img src="../assets/bg3.jpg">
-          <v-card class="pa-5 pa-md-10" color="#000000DF" flat height="100%">
+          <v-card class="py-15 px-8 pa-md-10" color="#000000DF" flat height="100%">
             <div data-aos="fade-up">
               <div
                 class="text-center font-weight-bold white--text"
@@ -292,7 +290,7 @@
           <v-card
             height="100%"
             color="#2282ceCF"
-            class="pa-5 pa-md-10 d-flex flex-column"
+            class="py-15 px-8 pa-md-10 d-flex flex-column"
           >
             <div data-aos="fade-up">
               <div
@@ -310,7 +308,7 @@
             </div>
             <v-container class="my-auto">
               <v-row>
-                <v-col cols="12" md="4">
+                <v-col cols="12" md="6">
                   <div
                     class="d-flex flex-column justify-center align-center"
                     data-aos="zoom-in"
@@ -323,12 +321,12 @@
                     ></v-img>
                     <div class="text-center h6">
                       TESOL 이수 <br />
-                      <v-icon color="white">fas fa-arrow-right</v-icon> (
+                      (
                       회사지원 프로그램 )
                     </div>
                   </div>
                 </v-col>
-                <v-col cols="12" md="4">
+                <v-col cols="12" md="6" class="">
                   <div
                     class="d-flex flex-column justify-center align-center"
                     data-aos="zoom-in"
@@ -348,7 +346,7 @@
                     </div>
                   </div>
                 </v-col>
-                <v-col cols="12" md="4">
+                <v-col cols="12" md="6">
                   <div
                     class="d-flex flex-column justify-center align-center"
                     data-aos="zoom-in"
@@ -369,7 +367,7 @@
                 </v-col>
               </v-row>
               <v-row justify="center">
-                <v-col cols="12" sm="4">
+                <v-col cols="12" sm="6">
                   <v-img
                     src="../assets/graphic.png"
                     width="400"
@@ -508,7 +506,7 @@
           <v-card
             height="100%"
             color="#2196f3CF"
-            class="pa-5 pa-md-10 d-flex flex-column"
+            class="px-8 py-15 pa-md-10 d-flex flex-column"
           >
             <div
               class="text-center white--text font-weight-bold korean-text nanum"
@@ -578,6 +576,7 @@ export default {
   mounted() {
     this.screenWidth = screen.width;
     this.isMobile = this.screenWidth <= 960 ? true : false;
+    window.fbq('track', 'Lead');
   },
 
   methods: {
