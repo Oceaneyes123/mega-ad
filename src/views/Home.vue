@@ -3,121 +3,143 @@
     <v-card dark flat tile height="100%">
       <v-card height="60px" color="#3089FF"></v-card>
       <v-container class="justify-center align-center px-0" fluid>
-        <div class="d-flex flex-column justify-center align-center" width="100%" style="height:200px;">
-            <div
-              class="nanum text-center korean-text"
-              :class="isMobile ? 'h5' : 'h4'"
-              v-if="carousel == 0"
+        <div
+          class="d-flex flex-column justify-center align-center"
+          width="100%"
+          style="height:200px;"
+        >
+          <div
+            class="nanum text-center korean-text"
+            :class="isMobile ? 'h5' : 'h4'"
+            v-if="carousel == 0"
+          >
+            <span class="font-weight-black" style="font-size: larger">
+              영.어.
+            </span>
+            <span class="font-weight-regular grey--text text--lighten-1">
+              어려운 이유
+            </span>
+            <br />
+            <span class="font-weight-regular grey--text text--lighten-1"
+              >이제 아셔야 합니다.</span
             >
-              <span class="font-weight-black" style="font-size: larger">
-                영.어.
-              </span>
-              <span class="font-weight-regular grey--text text--lighten-1">
-                어려운 이유
-              </span>
-              <br>
-              <span class="font-weight-regular grey--text text--lighten-1">이제 아셔야 합니다.</span>
-            </div>
-            <div
-              class="nanum py-10 text-center korean-text"
-              :class="isMobile ? 'h5' : 'h4'"
-              v-if="carousel == 1"
-
+          </div>
+          <div
+            class="nanum py-10 text-center korean-text"
+            :class="isMobile ? 'h5' : 'h4'"
+            v-if="carousel == 1"
+          >
+            <span class="font-weight-black" style="font-size: larger">
+              스피킹!
+            </span>
+            <span class="font-weight-regular grey--text text--lighten-1"
+              >잘못된 방법으로</span
             >
-              <span class="font-weight-black" style="font-size: larger">
-                스피킹!
-              </span>
-              <span class="font-weight-regular grey--text text--lighten-1">잘못된 방법으로</span>
-              <br>
-              <span class="font-weight-regular grey--text text--lighten-1">
-                공부하시지 않으셨나요?
-              </span>
-            </div>
-            <div
-              class="nanum py-10 text-center korean-text"
-              :class="isMobile ? 'h5' : 'h4'"
-              v-if="carousel == 2"
-
+            <br />
+            <span class="font-weight-regular grey--text text--lighten-1">
+              공부하시지 않으셨나요?
+            </span>
+          </div>
+          <div
+            class="nanum py-10 text-center korean-text"
+            :class="isMobile ? 'h5' : 'h4'"
+            v-if="carousel == 2"
+          >
+            <span class="font-weight-black" style="font-size: larger">
+              스피킹
+            </span>
+            <span class="font-weight-regular grey--text text--lighten-1"
+              >실력이</span
             >
-              <span class="font-weight-black" style="font-size: larger">
-                스피킹
-              </span>
-              <span class="font-weight-regular grey--text text--lighten-1">실력이</span>
-              <br>
-              <span class="font-weight-regular grey--text text--lighten-1">
-                좀처럼 늘지 않으시나요?
-              </span>
-            </div>
-            <div v-else>
-
-            </div>
+            <br />
+            <span class="font-weight-regular grey--text text--lighten-1">
+              좀처럼 늘지 않으시나요?
+            </span>
+          </div>
+          <div v-else></div>
         </div>
 
         <v-container class="px-0">
-          <v-card max-width="900" class="mx-auto" :class="{'rounded-xl':!isMobile}" light>
+          <v-card
+            max-width="900"
+            class="mx-auto"
+            :class="{ 'rounded-xl': !isMobile }"
+            light
+          >
             <div
               class="d-flex flex-column justify-center align-center"
               style="height: 100%"
             >
-                <v-card-text class="d-flex justify-center align-center" style="height:400px; background:#3089FF">
-                    <div style="color: #d6d6d6" height="100%" v-for="(item, i) in survey" :key="i">
-                      <div v-if="carousel==i">
-                        <div
-                          :class="isMobile ? 'h6' : 'h5'"
-                          class="text-center nanum mb-10 korean-text font-weight-light white--text"
-                          style="height:60px"
-                          v-html="item.question"
-
-                        ></div>
-                        <div class="d-flex justify-center">
-                          <div
-                            class="mr-7 d-flex flex-column"
-                            @click="
-                              carousel == 2
-                                ? $router.push('/advertisement')
-                                : (carousel = carousel + 1)
-                            "
+              <v-card-text
+                class="d-flex justify-center align-center"
+                style="height:400px; background:#3089FF"
+              >
+                <div
+                  style="color: #d6d6d6"
+                  height="100%"
+                  v-for="(item, i) in survey"
+                  :key="i"
+                >
+                  <div v-if="carousel == i">
+                    <div
+                      :class="isMobile ? 'h6' : 'h5'"
+                      class="text-center nanum mb-10 korean-text font-weight-light white--text"
+                      style="height:60px"
+                      v-html="item.question"
+                    ></div>
+                    <div class="d-flex justify-center">
+                      <div
+                        class="mr-7 d-flex flex-column"
+                        @click="
+                          carousel == 2
+                            ? $router.push('/advertisement')
+                            : (carousel = carousel + 1)
+                        "
+                      >
+                        <v-hover v-slot="{ hover }">
+                          <v-icon
+                            color="white"
+                            style="font-size: 60px"
+                            :class="{ 'on-hover': hover }"
+                            >{{
+                              hover
+                                ? "fas fa-check-circle"
+                                : "far fa-check-circle"
+                            }}</v-icon
                           >
-                            <v-hover v-slot="{ hover }">
-                              <v-icon
-                                color="white"
-                                style="font-size: 60px"
-                                :class="{ 'on-hover': hover }"
-                                >{{
-                                  hover
-                                    ? "fas fa-check-circle"
-                                    : "far fa-check-circle"
-                                }}</v-icon
-                              >
-                            </v-hover>
-                            <div class="mt-3 white--text">{{ item.answer1 }}</div>
-                          </div>
-                          <div
-                            class="ml-7 d-flex flex-column"
-                            @click="
-                              carousel == 2
-                                ? $router.push('/advertisement')
-                                : (carousel = carousel + 1)
-                            "
+                        </v-hover>
+                        <div class="mt-3 white--text text-center">
+                          {{ item.answer1 }}
+                        </div>
+                      </div>
+                      <div
+                        class="ml-7 d-flex flex-column"
+                        @click="
+                          carousel == 2
+                            ? $router.push('/advertisement')
+                            : (carousel = carousel + 1)
+                        "
+                      >
+                        <v-hover v-slot="{ hover }">
+                          <v-icon
+                            color="white"
+                            style="font-size: 60px"
+                            :class="{ 'on-hover': hover }"
+                            >{{
+                              hover
+                                ? "fas fa-check-circle"
+                                : "far fa-check-circle"
+                            }}</v-icon
                           >
-                            <v-hover v-slot="{ hover }">
-                              <v-icon
-                                color="white"
-                                style="font-size: 60px"
-                                :class="{ 'on-hover': hover }"
-                                >{{
-                                  hover
-                                    ? "fas fa-check-circle"
-                                    : "far fa-check-circle"
-                                }}</v-icon
-                              >
-                            </v-hover>
-                            <div class="mt-3 white--text">{{ item.answer2 }}</div>
-                          </div>
+                        </v-hover>
+                        <div class="mt-3 white--text text-center">
+                          {{ item.answer2 }}
                         </div>
                       </div>
                     </div>
-                </v-card-text>
+                  </div>
+                </div>
+              </v-card-text>
 
               <!-- <v-carousel
                 :show-arrows="false"
@@ -190,26 +212,25 @@
                   </v-card>
                 </v-carousel-item>
               </v-carousel> -->
-
             </div>
           </v-card>
         </v-container>
       </v-container>
-      <div style="
+      <div
+        style="
           position: fixed;
           bottom: 0;
           width: 100%;
           text-align: center;"
-          class="pb-2"
+        class="pb-2"
       >
         <div
-         class="pa-2 blue blue rounded-circle d-inline-block"
-          v-for="item in [0,1,2]"
+          class="pa-2 blue blue rounded-circle d-inline-block"
+          v-for="item in [0, 1, 2]"
           :key="item"
-          :class="{'mr-2': item!=2, 'lighten-3': carousel != item }"
+          :class="{ 'mr-2': item != 2, 'lighten-3': carousel != item }"
         ></div>
       </div>
-
     </v-card>
   </v-app>
 </template>
@@ -254,7 +275,6 @@ export default {
   mounted() {
     this.screenWidth = screen.width;
     this.isMobile = this.screenWidth <= 960 ? true : false;
-
   },
 
   methods: {

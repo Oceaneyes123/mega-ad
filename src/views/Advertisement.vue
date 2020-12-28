@@ -1,7 +1,13 @@
 <template>
   <v-app>
-    <v-container class="py-0 px-0" :fluid="isMobile">
-      <v-img src="../assets/bg1.jpg" :height="isMobile ? '' : '100vh'" contain>
+    <!-- <v-container class="py-0 px-0" :fluid="isMobile"> -->
+    <v-container class="py-0 px-0" fluid>
+      <v-img
+        eager
+        src="../assets/bg1.jpg"
+        :height="isMobile ? '' : '100vh'"
+        contain
+      >
         <v-card
           flat
           color="#000000CD"
@@ -17,14 +23,16 @@
             <span class="font-weight-black" style="font-size: larger">
               영.어.
             </span>
-            <span style="color: #d6d6d6" class="font-weight-regular ">어려운이유 </span>
-            <br/>
+            <span style="color: #d6d6d6" class="font-weight-regular "
+              >어려운이유
+            </span>
+            <br />
             <span style="color: #d6d6d6" class="font-weight-regular">
               이제 아셔야 합니다.
             </span>
           </div>
           <v-card
-            class="d-flex flex-column pa-10 my-auto mx-auto rounded-xl"
+            class="d-flex flex-column pa-8 my-auto mx-auto rounded-xl"
             color="#FFFFFF2D"
             flat
           >
@@ -36,7 +44,7 @@
               <div class="h6 white--text mr-3">Q</div>
               <v-card color="blue" class="rounded-lg">
                 <v-card-text class="h6 white--text korean-text">
-                  장기 수강을 했는데도 실력이 늘지 않으셨나요 ?
+                  장기 수강을 했는데도 실력이 늘지 않으셨나요?
                 </v-card-text>
               </v-card>
             </div>
@@ -50,7 +58,7 @@
                 <v-card-text class="h6 white--text korean-text">
                   광고를 보고 유명 사이트에서 수강을
                   <br v-if="!isMobile" />
-                  했지만 얼마 못 가 포기하셨나요 ?
+                  했지만 얼마 못 가 포기하셨나요?
                 </v-card-text>
               </v-card>
             </div>
@@ -93,7 +101,7 @@
         </div>
         <v-container class="my-auto">
           <v-row>
-            <v-col cols="12" md="4" class="mb-10 mb-md-5">
+            <v-col cols="12" md="3" class="mb-5 ml-auto">
               <v-card
                 color="blue"
                 height="250"
@@ -129,7 +137,7 @@
                 </div>
               </v-card>
             </v-col>
-            <v-col cols="12" md="4" class="mb-10 mb-md-5">
+            <v-col cols="12" md="3" class="mb-5">
               <v-card
                 color="blue"
                 height="250"
@@ -156,9 +164,12 @@
                   <div class="my-auto text-center py-5">
                     <span>영어를 온전히 구사하기 위해서는 영어자체가</span>
                     <div class="font-weight-bold">
-                      <span class="font-weight-black" style="font-size: larger">암묵기억</span> 으로 각인되어 있어야 합니다.
+                      <span class="font-weight-black" style="font-size: larger"
+                        >암묵기억</span
+                      >
+                      으로 각인되어 있어야 합니다.
                     </div>
-                    <br>
+                    <br />
                     <span class="">
                       필기시험을 잘 보더라도 스피킹이 잘 안 되는 이유입니다.
                     </span>
@@ -166,7 +177,7 @@
                 </div>
               </v-card>
             </v-col>
-            <v-col cols="12" md="4" class="mb-10 mb-md-5">
+            <v-col cols="12" md="3" class="mb-5 mr-auto">
               <v-card
                 color="blue"
                 height="250"
@@ -194,7 +205,7 @@
                     <div class="font-weight-bold">
                       왜? 스피킹 실력이 좀처럼 늘지 않을까요?
                       <div class="mt-3">
-                        <v-icon color="white" >fas fa-arrow-right</v-icon>
+                        <v-icon color="white">fas fa-arrow-right</v-icon>
                         몸에 배이도록 하는
                       </div>
                       <div>효과적인 연습이 필요합니다</div>
@@ -207,8 +218,13 @@
         </v-container>
       </v-card>
       <v-card tile>
-        <v-img src="../assets/bg3.jpg">
-          <v-card class="py-15 px-8 pa-md-10" color="#000000DF" flat height="100%">
+        <v-img eager src="../assets/bg3.jpg">
+          <v-card
+            class="py-15 px-8 pa-md-10"
+            color="#000000DF"
+            flat
+            height="100%"
+          >
             <div data-aos="fade-up">
               <div
                 class="text-center font-weight-bold white--text"
@@ -223,7 +239,7 @@
                 어떻게 잘 할 수 있을까요 ?
               </div>
             </div>
-            <div class="pa-0 pa-md-10">
+            <div class="pa-0 pa-md-10 mx-auto" style="max-width:1300px">
               <div
                 class="font-weight-bold white--text mb-3 mb-md-5"
                 :class="isMobile ? 'h5' : 'h3'"
@@ -286,7 +302,7 @@
             </div>
           </v-card>
         </v-img>
-        <v-img src="../assets/education.jpg">
+        <v-img eager src="../assets/education.jpg">
           <v-card
             height="100%"
             color="#2282ceCF"
@@ -315,14 +331,14 @@
                     data-aos-duration="1400"
                   >
                     <v-img
+                      eager
                       src="../assets/abc-icon.png"
                       width="175"
                       class="mb-3"
                     ></v-img>
-                    <div class="text-center h6">
+                    <div class="text-center h6 mb-5">
                       TESOL 이수 <br />
-                      (
-                      회사지원 프로그램 )
+                      ( 회사지원 프로그램 )
                     </div>
                   </div>
                 </v-col>
@@ -333,11 +349,12 @@
                     data-aos-duration="1700"
                   >
                     <v-img
+                      eager
                       src="../assets/hands-icon.png"
                       width="175"
                       class="mb-3"
                     ></v-img>
-                    <div class="white--text text-center h6 korean-text">
+                    <div class="white--text text-center h6 korean-text mb-5">
                       사회보장제도가입 <br />
                       건강보험, 주택기금가입 <br />
                       주치의제도 <br />
@@ -353,11 +370,12 @@
                     data-aos-duration="2000"
                   >
                     <v-img
+                      eager
                       src="../assets/openbook-icon.png"
                       width="175"
                       class="mb-3"
                     ></v-img>
-                    <div class="text-center h6">
+                    <div class="text-center h6 mb-5">
                       훈련생 제도 <br />
                       신입 / 기존 <br />
                       강사교육 프로그램 <br />
@@ -365,10 +383,9 @@
                     </div>
                   </div>
                 </v-col>
-              </v-row>
-              <v-row justify="center">
-                <v-col cols="12" sm="6">
+                <v-col cols="12" md="6">
                   <v-img
+                    eager
                     src="../assets/graphic.png"
                     width="400"
                     data-aos="zoom-in"
@@ -380,7 +397,7 @@
             </v-container>
           </v-card>
         </v-img>
-        <v-img src="../assets/training.jpg">
+        <v-img eager src="../assets/training.jpg">
           <v-card
             height="100%"
             color="#2282ceDF"
@@ -401,8 +418,9 @@
             <v-container class="my-auto">
               <v-row justify="center">
                 <v-col cols="7">
-                  <div class="d-flex flex-column flex-md-row">
+                  <div class="d-flex flex-column flex-md-row ">
                     <v-img
+                      eager
                       src="../assets/analyze-icon.png"
                       class="mr-md-5 mx-auto"
                       width="200"
@@ -411,7 +429,7 @@
                       contain
                     ></v-img>
                     <div
-                      class="text-center text-md-left"
+                      class="text-center text-md-left mt-5"
                       :data-aos="isMobile ? 'zoom-in' : 'fade-left'"
                       data-aos-duration="1400"
                     >
@@ -437,6 +455,7 @@
                 <v-col cols="7">
                   <div class="d-flex flex-column flex-md-row justify-center">
                     <v-img
+                      eager
                       src="../assets/abc2-icon.png"
                       width="200"
                       class="mr-md-5 mx-auto"
@@ -444,7 +463,7 @@
                       data-aos-duration="1400"
                       contain
                     ></v-img>
-                    <div class="text-center text-md-left">
+                    <div class="text-center text-md-left mt-5">
                       <div
                         class="korean-text mb-3 nanum font-weight-bold white--text"
                         :class="isMobile ? 'h6' : 'h4'"
@@ -469,6 +488,7 @@
                 <v-col cols="7">
                   <div class="d-flex flex-column flex-md-row justify-center">
                     <v-img
+                      eager
                       src="../assets/calendar-icon.png"
                       width="200"
                       class="mr-md-5 mx-auto"
@@ -476,7 +496,7 @@
                       data-aos-duration="1400"
                       contain
                     ></v-img>
-                    <div class="text-center text-md-left">
+                    <div class="text-center text-md-left mt-5">
                       <div
                         class="korean-text mb-3 nanum font-weight-bold white--text"
                         :class="isMobile ? 'h6' : 'h4'"
@@ -502,11 +522,11 @@
             </v-container>
           </v-card>
         </v-img>
-        <v-img src="../assets/book.jpg">
+        <v-img eager src="../assets/book.jpg">
           <v-card
             height="100%"
             color="#2196f3CF"
-            class="px-8 py-15 pa-md-10 d-flex flex-column"
+            class="px-4 py-15 pa-md-10 d-flex flex-column"
           >
             <div
               class="text-center white--text font-weight-bold korean-text nanum"
@@ -574,7 +594,7 @@ export default {
   mounted() {
     this.screenWidth = screen.width;
     this.isMobile = this.screenWidth <= 960 ? true : false;
-    window.fbq('track', 'Lead');
+    window.fbq("track", "Lead");
   },
 
   methods: {
