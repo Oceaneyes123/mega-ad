@@ -90,7 +90,7 @@
                                 }}</v-icon
                               >
                             </v-hover>
-                            <div class="mt-3 white--text">{{ item.answer1 }}</div>
+                            <div class="mt-3 white--text text-center">{{ item.answer1 }}</div>
                           </div>
                           <div
                             class="ml-7 d-flex flex-column"
@@ -112,7 +112,7 @@
                                 }}</v-icon
                               >
                             </v-hover>
-                            <div class="mt-3 white--text">{{ item.answer2 }}</div>
+                            <div class="mt-3 white--text text-center">{{ item.answer2 }}</div>
                           </div>
                         </div>
                       </div>
